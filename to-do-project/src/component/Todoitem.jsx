@@ -1,10 +1,8 @@
-function Todoitem1() {
-  let item = "Buy Milk";
-  let date = "24/02/24";
+function Todoitem({ todoitem, date }) {
   return (
     <div class="container ">
       <div class="row vn-row">
-        <div class="col-6">{item}</div>
+        <div class="col-6">{todoitem}</div>
         <div class="col-4">{date}</div>
         <div class="col-2">
           <button type="button" class="btn btn-danger vn-button vn-btn">
@@ -15,4 +13,4 @@ function Todoitem1() {
     </div>
   );
 }
-export default Todoitem1;
+export default Todoitem;
